@@ -1,4 +1,6 @@
-# Write a function named dice_sum that prompts the user for a desired sum, then repeatedly rolls two six-sided dice until their sum is the desired sum. Here is the expected dialogue with the user:
+# Write a function named dice_sum that prompts the user for a desired sum,
+# then repeatedly rolls two six-sided dice until their sum is the desired sum.
+# Here is the expected dialogue with the user:
 #
 # Desired dice sum: 9
 # 4 and 3 = 7
@@ -8,7 +10,9 @@
 # 1 and 5 = 6
 # 6 and 3 = 9
 #
-# (Because this problem uses random numbers, our test cases check only the general format of your output. You must still examine the output yourself to make sure the answer is correct.)
+# (Because this problem uses random numbers, our test cases check only the
+# general format of your output. You must still examine the output yourself to
+# make sure the answer is correct.)
 
 
 import random
@@ -29,3 +33,6 @@ def dice_sum():
 
         if adder == desiredSum:
             isSolved = True
+
+
+dice_sum()
