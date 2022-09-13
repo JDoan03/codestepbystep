@@ -8,24 +8,7 @@
 
 
 def num_in_common(l1, l2):
-    uniquel1 = []
-    uniquel2 = []
-    counter = 0
-
-    while True:
-        for x in l1:
-            if x not in uniquel1:
-                uniquel1.append(x)
-
-        for x in l2:
-            if x not in uniquel2:
-                uniquel2.append(x)
-
-        for num1 in uniquel1:
-            for num2 in uniquel2:
-                if num1 == num2:
-                    counter += 1
-        return counter
+    return len(set(l1) & set(l2))
 
 
 num_in_common([3, 7, 3, -1, 2, 3, 7, 2, 15, 15], [-5, 15, 2, -1, 7, 15, 36])  # 4
