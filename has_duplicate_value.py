@@ -9,14 +9,8 @@
 
 
 def has_duplicate_value(dict):
-    unilist = list(dict.values())
-    if len(dict) == 0 or len(dict) == 1:
-        return False
-    else:
-        if len(set(unilist)) == len(dict):
-            return False
-        else:
-            return True
+    dic_values = dict.values()
+    return len(set(dic_values)) < len(dic_values)
 
 
 has_duplicate_value({'Marty': 'Stepp', 'Stuart': 'Reges', 'Jessica': 'Miller', 'Amanda': 'Camp', 'Hal': 'Perkins'})  # False
